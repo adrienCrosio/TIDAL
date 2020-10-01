@@ -2,6 +2,8 @@
 session_start();
 
 require('./libs/smarty/Smarty.class.php');
+require('./controllers/controller.php');
+require('./models/model.php');
 
 try {
     $bdd = new PDO("mysql:host=localhost;dbname=webapp", "debian-sys-maint",  "aR7RIRZbiUZw3dYk");
